@@ -264,7 +264,7 @@ else
   if [ ! -d "/home/hermeswebui/.hermes/hermes-agent" ]; then
   echo "== Downloading hermes-agent (The Brain) ..."
   mkdir -p /home/hermeswebui/.hermes
-  git clone https://github.com/nesquena/hermes-agent.git /home/hermeswebui/.hermes/hermes-agent
+  git clone https://github.com/NousResearch/hermes-agent.git /home/hermeswebui/.hermes/hermes-agent
 fi
 
   if [ -d "/home/hermeswebui/.hermes/hermes-agent" ] && [ -f "/home/hermeswebui/.hermes/hermes-agent/pyproject.toml" ]; then
