@@ -275,6 +275,8 @@ else
 fi
 
 echo ""; echo "== Running hermes-webui"
+export HOST="0.0.0.0"
+export HERMES_WEBUI_HOST="0.0.0.0"
 cd /app; python server.py || error_exit "hermes-webui failed or exited with an error"
 
 # we should never be here because the server should be running indefinitely, but if we are, we exit safely
